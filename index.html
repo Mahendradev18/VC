@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ii.css">
+    <style>
+       
+        form{
+            border: 1px solid;
+            width: 200px;
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 25px;
+            border-radius: 50px;
+            box-shadow: 3px 3px 20px #ffff;
+            background-color: #ffff;
+            margin-top: 60px;
+        }
+        body{
+            background-image: url(./bgfons.com\ -\ ornaments_texture1125.jpg);
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .oo{
+            border: none;
+            border-bottom:1.5px solid #3b3939;
+            padding: 10px;
+
+        }
+        
+        .mm{
+            color:gold;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <form action="" id="fm">
+        <h2 style="color:darkorange;">ᕼᗴᒪᒪᗝ...14ᖇ</h2>
+    <input id="i1" class="oo" type="text" name="" id=""  placeholder="First Name" required><br><br>
+    <input id="i2" class="oo" type="text"  placeholder="Second Name" required><br><br>
+    <button id="bt" type="submit"><span>Goo !!</span></button>
+</form>
+
+    <script>
+        let btn=document.getElementById("bt");
+        btn.addEventListener("click",(e)=>{
+            e.preventDefault()
+        let frm=document.getElementById("fm");
+        frm.style.display="none";
+        document.body.style.backgroundImage="none"
+
+        let div=document.createElement("div");
+        document.body.appendChild(div);
+        div.style.marginTop="80px";
+        
+        let img=document.createElement("img");
+        div.appendChild(img);
+        img.setAttribute("src","./cute-beautiful-lord-ganesh-image-day-light-view_675932-1045.avif");
+        img.setAttribute("width","220px");
+        img.style.borderRadius="50%";
+        img.style.marginLeft="15px"
+
+        let inp=document.getElementById("i1");
+        let inp1=document.getElementById("i2")
+
+
+        let h2=document.createElement("h2");
+        div.appendChild(h2);
+        h2.innerHTML="<m>Happy Vinayaka Chaturthi</m><br><br> "+inp.value+inp1.value;
+        h2.setAttribute("class","mm");
+        h2.style.textAlign="center"
+    })
+
+    </script>
+</body>
+</html>
